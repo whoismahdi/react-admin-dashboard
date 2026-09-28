@@ -1,5 +1,8 @@
 # React Admin Dashboard
 
+Live Demo:
+https://react-admin-dashboard-theta-seven.vercel.app/
+
 A modern and responsive admin dashboard built with **React** and **Material UI**.
 
 This project is a frontend dashboard application designed to demonstrate reusable UI components, data visualization, tables, calendar management, forms, routing, and responsive layouts.
@@ -86,38 +89,6 @@ Make sure you have installed:
 * Node.js
 * npm
 
-### Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/whoismahdi/react-admin-dashboard.git
-```
-
-Navigate to the project directory:
-
-```bash
-cd react-admin-dashboard
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm start
-```
-
-The application will be available at:
-
-```text
-http://localhost:3000
-```
-
 ## Available Scripts
 
 ### `npm start`
@@ -157,14 +128,6 @@ The dashboard also uses custom styling for components such as:
 * Calendar
 * Navigation
 * Buttons and interactive elements
-
-## Screenshots
-
-Screenshots can be added here as the project UI evolves.
-
-```text
-Coming soon
-```
 
 ## Learning Goals
 
