@@ -40,33 +40,34 @@ const Dashboard = () => {
 
         <Box>
           <Button
+          sx={{
+            backgroundColor: colors.blueAccent[700],
+            color: colors.grey[100],
+            fontSize: "14px",
+            fontWeight: "bold",
+            padding: "10px 20px",
+            minWidth: { xs: "42px", sm: "auto" },}}>
+            <DownloadOutlinedIcon sx={{mr: { xs: 0, sm: "10px" },}}/>
+            <Box
+            component="span"
             sx={{
-              backgroundColor: colors.blueAccent[700],
-              color: colors.grey[100],
-              fontSize: "14px",
-              fontWeight: "bold",
-              padding: "10px 20px",
-            }}
-          >
-            <DownloadOutlinedIcon sx={{ mr: "10px" }} />
-            Download Reports
+              display: { xs: "none", sm: "inline" },}}>
+              Download Reports
+            </Box>
           </Button>
         </Box>
       </Box>
 
       {/* GRID & CHARTS */}
-      <Box
-        sx={{
-          display: "grid",
-          gridTemplateColumns: "repeat(12, 1fr)",
-          gridAutoRows: "140px",
-          gap: "20px",
-        }}
-      >
+      <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, minmax(0, 1fr))", lg: "repeat(12, minmax(0, 1fr))", }, gridAutoRows: { xs: "auto", lg: "140px", }, gap: "20px", minWidth: 0, }} >
         {/* ROW 1 */}
         <Box
           sx={{
-            gridColumn: "span 3",
+            gridColumn: {
+              xs: "1 / -1",
+              sm: "span 1",
+              lg: "span 3",
+            },
             backgroundColor: colors.primary[400],
             display: "flex",
             alignItems: "center",
@@ -91,7 +92,11 @@ const Dashboard = () => {
 
         <Box
           sx={{
-            gridColumn: "span 3",
+            gridColumn: {
+              xs: "1 / -1",
+              sm: "span 1",
+              lg: "span 3",
+            },
             backgroundColor: colors.primary[400],
             display: "flex",
             alignItems: "center",
@@ -116,7 +121,11 @@ const Dashboard = () => {
 
         <Box
           sx={{
-            gridColumn: "span 3",
+            gridColumn: {
+              xs: "1 / -1",
+              sm: "span 1",
+              lg: "span 3",
+            },
             backgroundColor: colors.primary[400],
             display: "flex",
             alignItems: "center",
@@ -141,7 +150,11 @@ const Dashboard = () => {
 
         <Box
           sx={{
-            gridColumn: "span 3",
+            gridColumn: {
+              xs: "1 / -1",
+              sm: "span 1",
+              lg: "span 3",
+            },
             backgroundColor: colors.primary[400],
             display: "flex",
             alignItems: "center",
@@ -167,7 +180,11 @@ const Dashboard = () => {
         {/* ROW 2 */}
         <Box
           sx={{
-            gridColumn: "span 8",
+            gridColumn: {
+              xs: "1 / -1",
+              sm: "span 1",
+              lg: "span 8",
+            },
             gridRow: "span 2",
             backgroundColor: colors.primary[400],
           }}
@@ -223,7 +240,11 @@ const Dashboard = () => {
 
         <Box
           sx={{
-            gridColumn: "span 4",
+            gridColumn: {
+              xs: "1 / -1",
+              sm: "span 1",
+              lg: "span 3",
+            },
             gridRow: "span 2",
             backgroundColor: colors.primary[400],
             overflow: "auto",
@@ -293,7 +314,11 @@ const Dashboard = () => {
         {/* ROW 3 */}
         <Box
           sx={{
-            gridColumn: "span 4",
+            gridColumn: {
+              xs: "1 / -1",
+              sm: "span 1",
+              lg: "span 4",
+            },
             gridRow: "span 2",
             backgroundColor: colors.primary[400],
             p: "30px",
@@ -329,7 +354,11 @@ const Dashboard = () => {
 
         <Box
           sx={{
-            gridColumn: "span 4",
+            gridColumn: {
+              xs: "1 / -1",
+              sm: "span 1",
+              lg: "span 4",
+            },
             gridRow: "span 2",
             backgroundColor: colors.primary[400],
           }}
@@ -356,7 +385,11 @@ const Dashboard = () => {
 
         <Box
           sx={{
-            gridColumn: "span 4",
+            gridColumn: {
+              xs: "1 / -1",
+              sm: "span 1",
+              lg: "span 4",
+            },
             gridRow: "span 2",
             backgroundColor: colors.primary[400],
             padding: "30px",

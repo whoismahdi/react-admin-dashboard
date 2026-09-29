@@ -60,6 +60,8 @@ const Contacts = () => {
       />
       <Box
         sx={{
+          width: "100%",
+          overflowX: "auto",
           m:"40px 0 0 0",
           height:"75vh",
           "& .MuiDataGrid-root": {

@@ -75,6 +75,8 @@ const Team = () => {
         <Header title='Team' subtitle='Manging the Team Members'/>
         <Box
         sx={{
+        width: "100%",
+        overflowX: "auto",
         m:"40px 0 0 0",
         height:"75vh",
           "& .MuiDataGrid-root": {
